@@ -48,7 +48,7 @@ main {
   padding: 1em 1.5em 1em 1.5em;
   border-radius: 2em;
 
-  background-color: var(--transparent-white);
+  background-color: var(--very-light-gray);
   white-space: nowrap;
 }
 
