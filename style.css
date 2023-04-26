@@ -9,6 +9,8 @@
   --very-light-gray: hsl(0, 0%, 95%); 
 }
 
+*{box-sizing: border-box;}
+
 html > body {
   font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
@@ -38,7 +40,7 @@ main {
 }
 
 .card > a {
-  width: 40%;
+  width: 70%;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -97,9 +99,31 @@ main {
 }
 
 @media only screen and (min-width: 1440px) {
+  main {
+    grid-template: auto / 1fr 1fr 1fr;
+    width: 50%;
+    margin: 10em auto;
 
+    padding: 0;
+    box-shadow: 10px 5px 5px gray;
+  }
+
+  .card > a {
+    margin-top: 5em;
+  }
 }
 
 @media only screen and (min-width: 720px) {
-  
+  main {
+    grid-template: auto / 1fr 1fr 1fr;
+    width: 95%;
+    margin: 10em auto;
+
+    padding: 0;
+    box-shadow: 10px 5px 5px gray;
+  }
+
+  .card > a {
+    margin-top: 5em;
+  }
 }
