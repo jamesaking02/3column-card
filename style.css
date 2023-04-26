@@ -24,10 +24,6 @@ main {
   padding: 3.5em;
 }
 
-img {
-  width: 18%;
-}
-
 .card > h1 {
   color: var(--very-light-gray);
   font-family: 'Big Shoulders Display', cursive;
