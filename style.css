@@ -98,10 +98,11 @@ main {
   background-color: var(--very-dark-cyan);
 }
 
-@media only screen and (min-width: 1440px) {
+/* Laptops and some desktops */
+@media only screen and (min-width: 1224px) {
   main {
     grid-template: auto / 1fr 1fr 1fr;
-    width: 50%;
+    width: 75%;
     margin: 10em auto;
 
     padding: 0;
@@ -113,10 +114,27 @@ main {
   }
 }
 
-@media only screen and (min-width: 720px) {
+/* tablets */
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
   main {
     grid-template: auto / 1fr 1fr 1fr;
     width: 95%;
+    margin: 10em auto;
+
+    padding: 0;
+    box-shadow: 10px 5px 5px gray;
+  }
+
+  .card > a {
+    margin-top: 5em;
+  }
+}
+
+/* larger desktop screens */
+@media only screen and (min-width: 1225px) {
+  main {
+    grid-template: auto / 1fr 1fr 1fr;
+    width: 50%;
     margin: 10em auto;
 
     padding: 0;
